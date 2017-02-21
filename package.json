@@ -1,0 +1,22 @@
+{
+  "name": "fcc-api-requestheaderparser",
+  "version": "1.0.0",
+  "description": "Solution to freeCodeCamp's [Request Header Parser API](https://www.freecodecamp.com/challenges/request-header-parser-microservice)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cslasher/fcc-api-requestheaderparser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cslasher/fcc-api-requestheaderparser/issues"
+  },
+  "homepage": "https://github.com/cslasher/fcc-api-requestheaderparser#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
