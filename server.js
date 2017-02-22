@@ -1,20 +1,20 @@
 var express = require('express')
 var app = express()
 var json = new Object()
+var port = process.env.PORT|3000
 
 app.get('/', function (req, res) {
-    // var header = req.header
     var ip = req.ip
-    if (ip.substr(0, 7) == "::ffff:") {
-        ip = ip.substr(7)
-    }
-    
+    var language = req.acceptsLanguages()
+    var software = req.headers['user-agent']
+
     json.ipaddress = ip
-    
+    json.language = language
+    json.software = software
 
   res.end(JSON.stringify(json))
 })
 
-app.listen(process.env.PORT, function () {
-  console.log(`Timestamp app listening on port ${process.env.PORT}!`)
+app.listen(port, function () {
+  console.log(`Timestamp app listening on port ${port}!`)
 })
