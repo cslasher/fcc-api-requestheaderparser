@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var json = new Object()
-var port = process.env.PORT|3000
+var port = process.env.PORT||3000
 
 app.get('/', function (req, res) {
     var ip = req.ip
